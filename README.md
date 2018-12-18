@@ -170,7 +170,6 @@ Changing the order of the letters within the brackets after background tells me 
 **What happens if you change the number of letters?**
 Changing the amount of letters to a single variable makes the backround render in grayscale. Whereas adding one more letter (to make four) reads
 
-**What happens if you change the letters for different ones?**
 
 # Sketch B
 
