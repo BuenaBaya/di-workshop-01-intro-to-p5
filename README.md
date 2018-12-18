@@ -209,6 +209,7 @@ function draw() {
 ```
 
 **What does draw do?**
+draws a red circle with a black outline at the mouse cursor position 60 times per second.
 
 Now look at:
 
@@ -217,8 +218,10 @@ fill(255, 0, 0)
 ```
 
 **What do these numbers do? What happens when you change them?**
+This is the fill colour for the drawn shape.
 
 **What does fill mean? What happens if you change it to stroke?**
+Fill is the fill colour for the drawn shape. Stroke is the outline for this shape. And you can colour it and stuff.
 
 **What happens if you remove (or comment out) this line? What about if you
 include both fill and stroke on seperate lines?**
@@ -230,13 +233,16 @@ ellipse(mouseX, mouseY, 30, 30)
 ```
 
 **What does `ellipse` do?**
+creates an ellipse at mouse x and mouse y 30x30px
 
 **What happens if you change the numbers?**
+it changes the dimension of the shape
 
 **What do `mouseX` and `mouseY` mean?**
+These are the position of the mouse cursor, and reflect in this instance the position of the drawn ellipse.
 
 **What happens if you change the order of the items between the `(` `)`?**
-
+it seems the first two items are the X and Y values of the location of the drawn shape, and the next two integers are the X, Y values of the dimensions of the shape. Whne you change the meeses with the numbers, the position of the ellipse stays the same, whilst the size changes.
 ---
 
 **What happens if you add `background(0)` after `draw() {`? Why?**
