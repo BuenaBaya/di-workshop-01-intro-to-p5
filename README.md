@@ -124,10 +124,13 @@ var b = 0
 ```
 
 **What might these lines do?**
+These are the values of the colours red (r), green (g), blue (b) between 0 and 255. Lower values represent less presence of the noted colours, with 0 being absent, and 255 being fully present.
 
 **What happens if you change the numbers?**
+Changing individual values will edit the colour profile of the background, creating a new colour from the mix of these three colour values. Using these three colours as a primary base, a multitude of colours across a gamut can be represented, including black (all at 0) and white (all at 255).
 
 **What numbers are allowed / What numbers have an effect?**
+Values from 0 to 255 are effective. Numbers below 0 will act as 0, and numbers above 255 will act as 255.
 
 Look at this line:
 
@@ -136,15 +139,20 @@ createCanvas(400, 400)
 ```
 
 **What does createCanvas do?**
+createCanvas creates a two-dimensional, four-sided shape, with the first number the width, and the second the height.
 
 **What happens if you change the numbers?**
+Changing the first number will change the width to the noted amount (in pixels), and the second number will change the height in pixels.
 
 **What numbers are allowed/what numbers have an effect?**
+Between 0 and 16384 [(2^14)-1]
 
 **What happens if you add/remove a number?**
+As it seems createCanvas works in two dimensions, another number does not in fact have any effect, when an assumption could be made for it to add depth if it was creating a three dimensional shape. Removing a number may in fact create a one dimensional shape, but it is not in fact representable. Having just one number returns a page with no visible shape, but no error returned.
 
 **Can you guess what the `function setup() {` part does? What happens if you
 change the name of setup?**
+I guess this function tells the code that the following code needs to be executed in a certain way, in this case - createCanvas needs to be setup to work. Without this line, or with the word 'setup' supplanted with another words, the function is not defined properly to be executed, and therefore does not run, and provides errors in the console.
 
 Look at this line:
 
@@ -153,11 +161,14 @@ background(r, g, b)
 ```
 
 **What does background do?**
+Background defines a the colour of a shape (made with createCanvas this time) with a solid colour mixed from variables defined within the brackets.
 
 **What happens if you change the order of the letters in background? What does
 this tell you about how the computer uses them?**
+Changing the order of the letters within the brackets after background tells me that the three integers are being read as red>green>blue, regardless of what the variables are named as.
 
 **What happens if you change the number of letters?**
+Changing the amount of letters to a single variable makes the backround render in grayscale. Whereas adding one more letter (to make four) reads
 
 **What happens if you change the letters for different ones?**
 
